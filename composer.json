@@ -1,0 +1,19 @@
+{
+    "name": "imi/robo-wpcli",
+    "description": "WP-CLI Wordpress Tasks for Robo task runner",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "iMi digital GmbH",
+            "email": "a.menk@imi.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "iMi\\RoboWpcli\\" : "src"
+        }
+    },
+    "require": {
+        "consolidation/robo": "^1.0.0"
+    }
+}
