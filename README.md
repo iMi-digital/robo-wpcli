@@ -1,5 +1,7 @@
-Robo Wrapper for N98-Magerun
+Robo Wrapper for WP-CLI
 ============================
 
-This is (currentl very thin) wrapper around N98-Magerun for using it in the
+This is (currentl very thin) wrapper around WP-CLI for using it in the
 Robo task runner.
+
+The plan is to add additional wordpress related robo tasks.
