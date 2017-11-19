@@ -16,7 +16,7 @@ class ExecWithResult extends Stack
 	public function execAndGetResult($parameters)
 	{
         $this->exec($parameters);
-        $results = '';
+        $results = [];
 
         foreach($this->exec as $exec) {
             $results[] = exec($exec, $result);
