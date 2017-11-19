@@ -2,6 +2,7 @@
 
 namespace iMi\RoboWpcli\Task\Wpcli;
 
+use Robo\Exception\TaskException;
 use Robo\Task\CommandStack;
 
 /**
