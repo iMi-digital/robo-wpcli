@@ -12,4 +12,9 @@ trait loadTasks
     {
         return $this->task(Stack::class, $pathToWpcli);
     }
+
+    protected function taskWpcliExecWithResult($pathToWpcli = null)
+    {
+        return $this->task(ExecWithResult::class, $pathToWpcli);
+    }
 }
