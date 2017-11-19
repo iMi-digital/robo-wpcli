@@ -89,7 +89,7 @@ class Stack extends CommandStack {
      * @param $parameters
      */
     public function execHumanReadableDbDump( $parameters ) {
-        $parameters .= '--complete-insert --skip-extended-insert ';
+        $parameters .= ' --complete-insert --skip-extended-insert ';
         $this->execDbDump( $parameters );
     }
 
@@ -98,10 +98,8 @@ class Stack extends CommandStack {
     }
 
     public function execSearchReplaceBaseUrl($old, $new, $parameters = '--recurse-objects --skip-columns=guid') {
-        $old = rtrim($old, '/') . '/';
-        $new = rtrim($new, '/') . '/';
+        $old = rtrim($old, '/');
+        $new = rtrim($new, '/');
         $this->exec( 'search-replace ' . escapeshellarg($old) . ' ' . escapeshellarg($new) . ' ' . $parameters);
     }
-
-
 }
