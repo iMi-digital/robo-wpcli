@@ -5,6 +5,9 @@
 class RoboFile extends \Robo\Tasks {
     use \iMi\RoboPack\LoadTasks;
 
+    /**
+     * It is important to stop execution if there was an error
+     */
     public function __construct() {
         $this->stopOnFail();
     }
